@@ -1,0 +1,50 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+h1 {
+  font-size:60px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+ol {
+  font-size: 20px;
+  border-right: 1px solid gray;
+  width: 150px;
+  margin: 0;
+  padding: 20px;
+  padding-left: 40px;
+  list-style-type: none;
+}
+table {
+  text-align: center;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+}
+#contents {
+  padding: 20px;
+}
+@media(max-width:800px /*여기 뒤에 ;넣으면 작동 안함*/) {
+  .grid1 {
+    display: block;
+  }
+  ol {
+    border: none;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding: 20px;
+  }
+  table{
+    margin: auto;
+  }
+  img {
+    display: block;
+    margin: auto;
+  }
+}
